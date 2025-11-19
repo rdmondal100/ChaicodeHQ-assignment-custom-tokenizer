@@ -75,8 +75,8 @@ export default function Tokenizer() {
   return (
     <div className="container mx-auto mt-10 w-full flex flex-col gap-5 p-3">
       {/* Input */}
-      <div className="wrapper flex flex-col lg:flex-row gap-5 w-full">
-        <Card className="shadow-md w-full">
+      <div className="wrapper flex flex-col lg:flex-row gap-5 w-full ">
+        <Card className="shadow-md w-full lg:min-h-96   ">
           <CardHeader>
             <CardTitle className="text-lg font-bold flex gap-3">
               <div> Enter Text to Tokenize → </div>{" "}
@@ -90,7 +90,7 @@ export default function Tokenizer() {
               placeholder="Type your text here..."
               value={text}
               onChange={(e) => setText(e.target.value)}
-              className="min-h-[120px]"
+              className="min-h-[120px] lg:min-h-60"
             />
           </CardContent>
         </Card>
